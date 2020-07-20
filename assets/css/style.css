@@ -1,0 +1,191 @@
+/* Fuentes que iremos a utilizar*/
+@font-face{
+    font-family: 'Rowdies';
+    src: url('./fonts/Rowdies-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'PlayfairDisplay';
+    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Fuente para titulos */
+@font-face{
+    font-family: 'Lobster';
+    src: url('./fonts/Lobster-Regular.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face{
+    font-family: 'OpenSansCondensed';
+    src: url('./fonts/OpenSansCondensed-Light.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'RedRose';
+    src: url('./fonts/RedRose-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+
+/*El navegador trae por defectos algunos margenes y padding internos, 
+* y con estas reglas lo que haremos es eliminar esos margenes. 
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    width: 1200px;
+    height: 550px;
+    margin: 0px auto;
+    margin-top: 50px;
+    border: 1px solid black;
+
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #756bb9;
+    text-align: center;
+    line-height: 80px;
+}
+
+header h1{
+    color: black;
+    text-shadow: 1px 1px 0px white;
+    font-size: 40px;
+    font-family: 'Rowdies';
+}
+
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: #D5D1EF;   
+    
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin-left:10px ;
+}
+
+.nav ul li a{
+    margin-right: 15px;
+
+    /*Separación entre los enlaces */
+    line-height: 35px;
+    font-size: 25px;
+    text-decoration: none;
+    color:  black;
+    font-family: 'PlayfairDisplay';
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.nav ul li a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+}
+
+
+.container-group{
+    float: left;
+    width: 69%;
+    height: auto;
+    
+}
+
+.title{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Lobster';
+    text-shadow: 1px 1px 1px white;
+}
+
+.profile{
+    display: flex;
+   
+}
+
+.description-group{  
+    width: 350px;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+
+
+.image-profile img{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 0px auto; 
+    margin-top: 20px;
+   border-radius: 350px;    
+}
+
+.group-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #4e4780;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    height: 30px;
+    text-align: center;   
+}
+
+.conten-right{
+   float: right;
+   width: 30%;
+   height: 382px;
+
+}
+
+.conten-right h2{
+    font-family: 'Lobster';
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.name{
+    font-family: 'OpenSansCondensed';
+    font-size: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.commentary p{
+    font-family: 'RedRose';
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 15px;   
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer{
+    width: 1200px;
+    margin: 0px auto;
+    border: 1px solid black;
+    background-color: #c0bbdf;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
